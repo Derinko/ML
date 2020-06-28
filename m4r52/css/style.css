@@ -249,7 +249,7 @@
     grid-area: banner banner banner;
     grid-template-rows: repeat(autofill, minmax(250px, 1fr));
     grid-column: 1/-1;
-    height: 30rem;
+    height: 35rem;
 
   }
   header > img {
@@ -270,6 +270,7 @@
     display: grid;
     /*grid-template-columns: 1fr 1fr 1fr;*/
     justify-content: space-evenly;
+
     grid-template-rows: 1fr 1fr;
     grid-area: main;
     grid-column: 2/3;
@@ -282,6 +283,9 @@
     grid-column: 1/-1;
     height: 50px;
   }
+  .h1>h1{
+    text-align: center;
+  }
   .service {
     display: flex;
     flex-wrap: wrap;
@@ -291,8 +295,9 @@
     width: 15rem !important;
     height: 15rem !important;
   }
-  .card >p{
+  .card-body{
      overflow-wrap: break-word;
+     text-align: center ;
   }
   .card > svg {
     align-self: center;
@@ -317,8 +322,38 @@
   .vid{
     width: 300px; height: 300px;
   }
-  .rec>p{
-    font
+
+  .end{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr ;
+  grid-column:1/-1;
+  }
+  .end>img{
+    width: 500px;
+    height: 500px;
+  }
+
+  .te>p,h1{ grid-row: 1/1;
+  grid-column: 2/2; 
+  text-align: left;
+}
+  .te>p{font-size: 30px !important;}
+  .te>h1{
+    font-size: 50px!important;
+    font-weight: bolder;
+}
+  .bla{
+    margin-top: 100px;
+    grid-column: 1/-1;
+
+    font-size: 40px!important; 
+    
+  }
+  .bla>h1{text-align: right;}
+  .mess{
+    grid-row: 3/3;
+    grid-column: 2/2;
   }
   .bottom {
     display: grid;
@@ -328,6 +363,7 @@
     grid-gap: 10px;
     grid-column: 1/-1;
     height: 10rem;
+    border: 2px solid;
   
   }
   .logo {
