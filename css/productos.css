@@ -1,0 +1,143 @@
+@media (min-width: 1200px) {
+  body {
+    margin: 0;
+  }
+  #Container {
+    display: grid;
+    grid-template-columns: 8.2%[aside] 90% ;
+    grid-template-rows: auto;
+    padding: 0;
+    grid-template-areas:
+      "top top top"
+      "left . main main"
+      "foot foot foot";
+    grid-gap: 20px;
+  }
+  nav {
+    display: grid;
+    grid-area: top top top;
+    grid-template-rows: repeat(autofill, minmax(250px, 1fr));
+    grid-column: 1/-1;
+    height: 5rem;
+    border: 1px solid black;
+
+  }
+  li > a {
+    display: inline-block;
+  }
+  li > a:hover {
+    background-color: blue;
+    color: black;
+  }
+
+  .left {
+    display: grid;  
+    grid-area: left;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 1px solid black;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;  
+    grid-column: 2/-1;
+    flex-flow: row;
+    grid-row: 2/3;
+    border: 1px solid black;
+  }
+
+  .h1 {
+    text-align: center;
+    grid-column: 1/-1;
+    height: 50px;
+  }
+  .row {
+    margin-top: 50px;
+    padding-left: 150px;
+  }
+  .col{   height: 450px;
+    width: 200px;}
+  .card {
+    height: 400px;
+    width: 400px;
+  }
+  .card > img {
+    height: 250px;
+    width: 250px;
+    align-self: center;
+  }
+
+
+  #flip:hover{
+    background: url(img/men.jpg);
+  }
+  .bottom {
+    display: grid;
+    grid-area: foot foot foot;
+    grid-template-rows: repeat(autofit, minmax(250px, 1fr));
+    grid-template-columns: 20% 75%;
+    grid-gap: 10px;
+    grid-column: 1/-1;
+    height: 10rem;
+  
+  }
+  .logo {
+    grid-column: 1/2;
+    border-right: 3px solid black;
+    align-self: center;
+  }
+  .logo > img {
+    height: 8.5rem;
+
+    margin-left: 40px;
+  }
+  .red {
+    margin-left: 30px;
+
+  }
+  .net {
+    display: flex;
+    flex-direction: row;
+  }
+  .net > img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+  #flip:hover{
+    background: url(img/men.jpg);
+    transform: scaleX(-1);
+  }
+/* Extra large devices (large desktops, 1200px and up)*/
+
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+/* Medium screens */
+@media screen and (min-width: 600px) {
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
+}
