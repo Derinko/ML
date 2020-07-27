@@ -10,17 +10,18 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
-    <title>ML Mundo Salud</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <title>Mundo Salud</title>
   </head>
   <body>
     <div class="container-fluid" id="Container">
       <nav
-        class="navbar sticky-top navbar-light"
+        class="navbar sticky-top navbar-expand-lg navbar-light "
         style="background-color: #e3f2fd;"
       >
         <a class="navbar-brand" href="#">
@@ -34,33 +35,65 @@
           />
           Mundo Salud
         </a>
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="Productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="empresa.html">Nuestra empresa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactos.html">Contactos</a>
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="nav justify-content-center mob ">
+              <li class="nav-item">
+                <a class="nav-link active" href="Productos.html">Productos</a>
+              </li>
+              <li class="nav-item mid">
+                <a class="nav-link" href="empresa.html">Nuestra empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contactos</a>
+              </li>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </ul>
+          </div>
+        </button>
+        <div class="nocol">
+          <ul class="nav justify-content-center ">
+            <li class="nav-item">
+              <a class="nav-link active" href="Productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="empresa.html">Nuestra empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactos.html">Contactos</a>
+            </li>
+          </ul>
+        </div>
+        <li class="here">Inicio</li>
       </nav>
       <header>
-        <img src="img/doctors.jpg" class="img-fluid" alt="Responsive image" />
+        <img src="img/doc.svg" class="img-fluid" alt="Responsive image" />
       </header>
       <aside class="left">
         <img src="img/dif.svg" class="img-fluid" alt="Responsive image" />
-        <img src="img/docwoman.svg" class="img-fluid" alt="Responsive image" 
-		style="
+        <img
+          src="img/docwoman.svg"
+          class="img-fluid"
+          alt="Responsive image"
+          style="
 		margin-top: 400px;
 		height: 500px;
-		" 
+		"
         />
       </aside>
-      <div class="lILL">
-      	
-      </div>
+      <div class="lILL"></div>
       <div class="main">
         <div class="h1"><h1>Nuestros servicios</h1></div>
         <div class="service">
@@ -92,7 +125,7 @@
             </div>
           </div>
           <div
-            class="card shadow p-3 mb-5 bg-white rounded"
+            class="card shadow p-3 mb-5 bg-white rounded a"
             style="width: 18rem; margin-left: 10px; margin-right: 10px;"
           >
             <img
@@ -166,36 +199,59 @@
       <aside class="right">
         <img src="img/dif.svg" class="img-fluid" alt="Responsive image" />
       </aside>
-      <div class="rec">
-      	<h2>	
-      		Buena comunicacion con nuestros clientes.
-      	</h2>
-      	<img src="img/handshake.svg" class="img-fluid" alt="Responsive image">
-      	<p>Procuramos siempre tener una gran comunicacion con cada uno de nuestros clientes, asegurando la satisfaccion de todos.</p>
- 		<br>
- 		<br>
- 		<br>
- 		<br>
- 		 		<br>
- 		<br>
- 		<br>
- 		<br>
- 		<br>
- 		<br>
-      	<h2>Delivery dentro de toda la ciudad!</h2>
-      	<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_Oc4sM1.json" .class="vid" background="transparent"  speed="1"   loop  autoplay></lottie-player>
+      <div class="rec animate__animated animate__fadeIn animate__delay-4s	4s">
+        <h2>
+          Buena comunicacion con nuestros clientes.
+        </h2>
+        <img src="img/handshake.svg" class="img-fluid" alt="Responsive image" />
+        <p>
+          Procuramos siempre tener una gran comunicacion con cada uno de
+          nuestros clientes, asegurando la satisfaccion de todos.
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2>Delivery dentro de toda la ciudad!</h2>
+        <lottie-player
+          src="https://assets8.lottiefiles.com/packages/lf20_Oc4sM1.json"
+          .class="vid"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
-		<div class="end">
-			<img src="img/interac.svg">
-			<div class="te" style="margin-top: 150px">
-			<h1>Comunicacion total</h1>
-			<p>Mediante nuestras redes sociales podemos comunicarnos y asi suplir sus necesidades.</p></div>
-			<div class="bla">
-				<h1>Que esperas para contactarnos?</h1>
-			</div>
-			<lottie-player src="https://assets4.lottiefiles.com/temp/lf20_JNpJ0D.json"  class="mess" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-
-		</div>
+      <div class="end">
+        <img src="img/interac.svg" class="des" />
+        <div class="te" style="margin-top: 150px">
+          <h1>Comunicacion total</h1>
+          <img src="img/interac.svg" class="mob" />
+          <p>
+            Mediante nuestras redes sociales podemos comunicarnos y asi suplir
+            sus necesidades.
+          </p>
+        </div>
+        <div class="bla animate__pulse animate__repeat-3	3">
+          <h1>Que esperas para contactarnos?</h1>
+        </div>
+        <lottie-player
+          src="https://assets4.lottiefiles.com/temp/lf20_JNpJ0D.json"
+          class="mess"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px;"
+          loop
+          autoplay
+        ></lottie-player>
+        <img src="img/arr.gif" class="e" alt="" />
+      </div>
       <footer class="bottom">
         <div class="logo">
           <img src="img/logo.png" class="img-fluid" alt="Responsive image" />
@@ -203,17 +259,29 @@
         <div class="red">
           <h1>Nuestras redes y contactos</h1>
           <div class="net">
-            <img src="img/whatsapp.svg" alt="" />
-
-            <img src="img/facebook.svg" alt="" />
-            <img src="img/inst.svg" alt="" />
+            <img src="img/whatsapp.svg" alt="Whatsapp" class="animate__animated animate__tada"/>
+            <img src="img/facebook.svg" alt="Facebook" class="animate__animated animate__tada" />
+            <img src="img/inst.svg" alt="Instagram" class="animate__animated animate__tada" />
           </div>
         </div>
       </footer>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"
+      ></script>
     </div>
   </body>
 </html>
